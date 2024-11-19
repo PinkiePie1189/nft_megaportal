@@ -1,0 +1,52 @@
+.table-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.scrollable-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    table-layout: fixed; /* Ensures all columns are of equal width */
+}
+
+.scrollable-table th,
+.scrollable-table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.scrollable-table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+.scrollable-cell {
+    max-height: 120px; /* Adjust as needed */
+    overflow-y: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+.scrollable-table td > .scrollable-cell {
+    padding: 5px;
+}
+
+.scrollable-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.scrollable-table tr:hover {
+    background-color: #f1f1f1;
+}
